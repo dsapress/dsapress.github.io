@@ -1,0 +1,36 @@
+---
+layout: default
+title: "Proceedings of Data Science Africa"
+---
+
+<p>Proceedings of Data Science Africa (PDSA) is a publication specifically aimed at publishing Artificial Intelligence, Machine Learning and Data Science for the African context.</p>
+
+<p> The aim of this journal is to facilitate communication of best practice in data science.</p>
+  
+<p>We welcome contributions of new research, recreation and application of existing ideas, publication of data sets, sharing of best practice.</p>
+
+<p>We have a unique approach to review which relies on a group of shepherds to refine submitted works. Our aim is to distill and facilitate rather than instruct. Shepherds ensure ideas are made as presentable as possible before publication so that the maximum benefit may be derived from sharing.</p>
+  
+<h2>Curators</h2>
+
+<p>The journal is *curated* rather than edited. Curators select and assign shepherds to each paper which bring the works through the publication process.</p>
+
+  Journal Editors are <a href="">Ciira wa Maina</a>, <a href="">Dina Manchuve</a> and <a href="">Ernest Mwebaze</a>. 
+<p>For frequently asked questions on preparing proceedings please see the <a href="./faq.html">FAQ</a>.</p>
+
+<h2>Proceedings</h2>
+
+<ul class="proceedings-list">
+  {% assign sorted = (site.github.public_repositories | sort: 'created_at') %}
+{% for repository in sorted reversed %}{% if repository.has_pages %}{% unless repository.name contains 'github.io' %}{% if repository.name contains 'v' %}
+  <li>
+    <a href="{{ repository.name | prepend: site.baseurl }}"><b>Volume {{ repository.name | remove_first: "v" }}</b></a> {{ repository.description }} 
+  </li>
+  {% endif %}{% endunless %}{% endif %}{% endfor %}    
+</ul>
+
+<hr>
+
+<p class="rss-subscribe">subscribe <a href="{{site.url}}{{site.baseurl}}{{ "/feed.xml"}}">via RSS</a></p>
+
+
