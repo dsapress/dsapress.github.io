@@ -13,39 +13,35 @@ title: Paper Formatting Instructions
 
 <p>Code included in the main text is integrated in the following way. Each code block is surrounded by four 'reverse quotes' as follows:</p>
 
-<code>
-  ```{python}
-  import numpy as np
-  a = np.randn(10)
-  ``
-</code>
+<pre>
+```{python}
+import numpy as np
+a = np.randn(10)
+```
+</pre>
 
 <p>Code that is included in the main text should be relevant to the main text. In other words, it should not disrupt the readers flow. Code that is peripheral to the flow of the paper should be in a separate library file that is imported at the beginning of the file. This library should have a comment above indicating the import.</p>
-<code>
-  ```{python}
-  # helper code
-  import dsa_helper
-  ```
-</code>
+<pre>
+```{python}
+# helper code
+import dsa_helper
+```
+</pre>
 
 <h2>Maths</h2>
 
 <p>Maths is included in standard latex style, using dollar signs to denote both inline math and display mode math. So inline math is denoted as below.</p>
 
-<code>
-  ```
-  $y=x^2$
-  ```
-</code>
+<pre>
+$y=x^2$
+</pre>
 
 <p>would render as $y=x^2$. To get display math mode (an equation outside the line of the text) you use two dollar signs as follows:</p>
-<code>
-  ```
-  $$
-  y=x^2,
-  $$
-  ```
-</code>
+<pre>
+$$
+y=x^2,
+$$
+</pre>
 Here we have added a comma to punctuate the equation. Equations are always punctuated as if they are a word in line with the text. So in the text the equation,
 $$
 y=x^2,
@@ -56,7 +52,7 @@ appears with commas either side. If you're interested in how to punctuate math y
 
 We handle citations in the journal using `pandoc-citeproc`, an extension to markdown that allows citations. The final version of your document will be processed by pandoc. But the main thing you need to know is that citations are included by starting with an 'at-sign', so a citation has the form `@Mwebaze-causal2010` might refer to a paper stored in a bib file as follows.
 
-<code>
+<pre>
 @InProceedings{Mwebaze-causal2010,
   author = 	 {Ernest Mwebaze and Washington Okori and John A. Quinn},
   title = 	 {Causal Structure Learning for Famine Prediction},
@@ -79,5 +75,5 @@ We handle citations in the journal using `pandoc-citeproc`, an extension to mark
                   accuracy of famine based on feature sets suggested
                   by our prior knowledge and by the models we learn.}
 }
-</code>
+</pre>
 
