@@ -1,0 +1,47 @@
+---
+title: Proceedings of Data Science Africa
+description: |
+  Proceedings of Data Science Africa
+
+  Volume Edited by:
+    Ciira Wa Maina
+    Dina Machuve
+    
+  Series Editors:
+    Neil D. Lawrence
+url: http://proceedings.datascienceafrica.org
+baseurl: "/"
+series: Proceedings of Data Science Africa
+shortname: PDSA
+comments: yes
+year: 2019
+editor:
+- given: Ciira wa
+  family: Maina
+- given: Dina
+  family: Machuve
+- given: Neil D. 
+  family: Lawrence
+twitter_username: dsa_org
+github_username: dsapress
+markdown: kramdown
+permalink: "/:title.html"
+github:
+  edit: true
+  repository: dsapress.github.io
+display:
+  copy_button:
+    bibtex: true
+    endnote: true
+    apa: true
+    ris: true
+  comments: false
+email: ''
+organisation:
+  name: Data Science Africa
+  shortname: DSA
+  url: http://www.datascienceafrica.org
+analytics:
+  google:
+    tracking_id: UA-XXXXXXXX-X
+---
