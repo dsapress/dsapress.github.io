@@ -9,7 +9,7 @@ description: |
     
   Series Editors:
     Neil D. Lawrence
-url: http://proceedings.datascienceafrica.org
+url: http://dsapress.github.io
 logo: dsa.png
 baseurl: "/"
 series: Proceedings of Data Science Africa
