@@ -9,6 +9,12 @@
 
     <div class="page-content" id="content">
       <div class="wrapper">
+	{% if page.title %}
+	<h1>{{ page.title }}</h1>
+	{% endif %}
+
+	{% include edit_link.html %}
+
         {{ content }}
       </div>
     </div>   
