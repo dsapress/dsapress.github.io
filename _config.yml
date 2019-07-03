@@ -11,6 +11,7 @@ description: |
     Neil D. Lawrence
 url: http://proceedings.datascienceafrica.org
 baseurl: "/"
+logo: dsa.png
 series: Proceedings of Data Science Africa
 shortname: PDSA
 comments: yes
