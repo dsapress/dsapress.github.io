@@ -10,8 +10,8 @@ description: |
   Series Editors:
     Neil D. Lawrence
 url: http://proceedings.datascienceafrica.org
-baseurl: "/"
 logo: dsa.png
+baseurl: "/"
 series: Proceedings of Data Science Africa
 shortname: PDSA
 comments: yes
@@ -40,6 +40,7 @@ display:
 email: ''
 organisation:
   name: Data Science Africa
+  logo: dsa.png
   shortname: DSA
   url: http://www.datascienceafrica.org
 analytics:
